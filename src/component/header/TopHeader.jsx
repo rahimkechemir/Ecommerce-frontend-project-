@@ -1,6 +1,6 @@
 import React from 'react'
 import "./header.css"
-import logo from "../../assets/logo.png";
+import icon from "../../assets/icon.jpg";
 import { Link } from 'react-router-dom'
 import { IoMdHeart } from "react-icons/io";
 import { GrSearch } from "react-icons/gr";
@@ -12,7 +12,7 @@ function TopHeader() {
   return (
     <div className="top-header">
       <div className="container">
-        <Link className="logo" to="/" ><img src={logo} alt="Logo" /></Link>
+        <Link className="logo" to="/" ><img src={icon} alt="Logo" /></Link>
           <form action="" className="search_box">
           <input type="text" placeholder="Search for products" id="search" name="search" />
           <button type="submit"><GrSearch /></button>
