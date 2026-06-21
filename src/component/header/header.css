@@ -9,6 +9,14 @@
     --p-color: #555;
     --bg-color: #f3f3f3;
 }
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin-bottom: 20;
+}
 .top-header .container {
     background-color: var(--white);
     height: 80px; 
@@ -107,6 +115,7 @@ display: flex;
 flex-direction: column;
 max-height: 400px;
 overflow-y: auto;
+z-index: 1000;
 
 clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 transition: 0.3s ease-in-out;
@@ -179,4 +188,41 @@ transition: 0.3s ease-in-out;
 height :100%;
 display: flex;
 align-items: center;
+}
+.hero {
+    margin-top: 10px; /* 80px top-header + 50px btm-header */
+}
+.hero{
+    padding-top: 50px;
+}
+.searchbox-container{
+    position: relative;
+}
+.suggestions{
+position: absolute;
+background: white;
+width: 100%;
+list-style: none;
+border-radius: 5px;
+border: 1px solid var(--main-color);
+}
+.suggestions:last-child{
+    border-bottom: none;
+}
+
+.suggestions li{
+    padding: 2px 2px 5px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.suggestions li img{
+    width: 30px;
+}
+.suggestions li span{
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--main-color);
 }

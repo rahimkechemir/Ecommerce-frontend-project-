@@ -33,7 +33,7 @@
   background-color: var(--main-color);
 }
 .product{
-    width: 100%;
+    
     gap: 30px;
     background-color: white;
     position: relative;
@@ -109,5 +109,83 @@ transition: 0.3s;
 }
 .product:hover .icons{
     right: 20px;
+
+}
+
+.loading-slideproduct .top-slide{
+    height: 105px;
+    
+
+}
+.loading-slideproduct .top-slide h2{
+    height: 35px;
+    margin-bottom: 20px;
+    width: 250px;
+    
+}
+.loading-slideproduct .top-slide p{
+    height: 25px;
+    width: 350px;
+}
+
+.skeltion{
+    background-color: #e2e5e7;
+    background-image: linear-gradient(
+        90deg,rgba(255,255,255,0),
+        rgba(255,255,255,0.5),rgba(255,255,255,0)
+    );
+    background-size: 40px 100%;
+    background-repeat: no-repeat;
+    background-position:left -40px top 0;
+    animation: shine 1s ease infinite;
+}
+@keyframes shine{
+    to{
+        background-position:right -40px top 0; 
+    }
+}
+
+.product-loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.product-loading .content {
+    height: 70px;
+}
+.product.in-cart .icons .btn-cart{
+background-color: var(--main-color);
+pointer-events: none;
+}
+.product.in-cart .icons .btn-cart svg{
+    fill: white;
+}
+.product .cart-status{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    top: -30px;
+    left: 50%;
+    transform:translateX(-50% );
+    transition: 0.3s;
+    color:black;
+}
+
+.product.in-cart .cart-status{
+top: 10px;
+}
+.product .cart-status svg {
+    color: green;
+}
+.product .icons span.infavorites{
+    background: var(--main-color);
+    transition: 0.3s ease-in-out;
+
+}
+.product .icons span.infavorites svg{
+    fill: white;
 
 }

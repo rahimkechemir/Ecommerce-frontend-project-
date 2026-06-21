@@ -20,7 +20,7 @@ function HeroSlider() {
     <>
       <div className="hero">
         <div className="container">
-          <Swiper loop={true} slidesPerView={1}  loopedSlides={3} 
+          <Swiper loop={true} slidesPerView={1}  
           autoplay={{ delay: 2500, disableOnInteraction: false }} pagination={{ clickable: true }} modules={[Pagination, Autoplay, Navigation]} className="mySwiper">
             <SwiperSlide>
               <div className="content">
