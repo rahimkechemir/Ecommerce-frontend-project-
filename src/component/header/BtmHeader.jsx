@@ -60,9 +60,9 @@ function BtmHeader() {
             </Link>
           </div>
           <div className="register-icon">
-            <Link to='/'><HiOutlineUserAdd /> register</Link>
+            <Link to='/signup'><HiOutlineUserAdd /> signup</Link>
 
-            <Link to='/'><MdOutlineLogin /> sign in</Link>
+            <Link to='/login'><MdOutlineLogin /> login</Link>
           </div>
 
         </nav>

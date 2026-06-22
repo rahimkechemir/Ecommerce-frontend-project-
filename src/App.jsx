@@ -11,6 +11,8 @@ import { AnimatePresence } from "framer-motion";
 import Categorypage from "./page/categorypage/Categorypage.jsx";
 import Searchresults from "./page/Searchresults.jsx";
 import Favorites from "./page/favorites/Favorites.jsx";
+import Login from "./page/login/Login.jsx";
+import Signup from "./page/login/Signup.jsx";
 function App() {
 
   return (
@@ -31,6 +33,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/cart' element={<Cart />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<Signup />} />
           <Route path='/favorites' element={<Favorites />} />
           <Route path='/search' element={<Searchresults />} />
           <Route path='/product/:id' element={<ProductDetails />} />

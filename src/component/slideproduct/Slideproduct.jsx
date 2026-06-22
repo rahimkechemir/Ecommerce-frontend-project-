@@ -8,6 +8,11 @@ import 'swiper/css/navigation';
 
 
 function SlideProduct({data,title}) {
+  // if data hasn't arrived yet (or the fetch failed), don't try to render the slider at all
+  if (!data || data.length === 0) {
+    return null
+  }
+
   return (
     <div className='slideproduct'>
       <div className="container">
@@ -27,7 +32,7 @@ function SlideProduct({data,title}) {
         >
           {data.map((item)=>{
             return(
-              <SwiperSlide><Product item={item} /></SwiperSlide>
+              <SwiperSlide key={item.id}><Product item={item} /></SwiperSlide>
 
             )
           })}
