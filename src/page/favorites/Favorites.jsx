@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Cartcontext } from '../../component/context/Cartcontext'
 import Pagetransition from '../../component/Pagetransition'
 import { h4 } from 'framer-motion/client'
-import SlideProduct from '../../component/slideproduct/SlideProduct'
+import Slideproduct from '../../component/slideproduct/Slideproduct'
 import Product from '../../component/slideproduct/Product'
 
 
