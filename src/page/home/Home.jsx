@@ -51,7 +51,7 @@ function Home() {
           <Slideproductloading />
         ) : (
           categories.map((category) =>
-            <SlideProduct key={category} data={products[category]} title={category.replace("-", " ")} />
+            <Slideproduct key={category} data={products[category]} title={category.replace("-", " ")} />
           )
         )}
       </div>
