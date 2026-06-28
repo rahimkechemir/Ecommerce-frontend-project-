@@ -4,7 +4,7 @@ A modern, responsive ecommerce frontend application built with React, featuring 
 
 ## 🎯 Project Overview
 
-This is a full-featured ecommerce frontend application designed to showcase products, manage shopping carts, and provide an intuitive user interface for online shopping. The project demonstrates modern web development practices using React and contemporary JavaScript tools.
+This is a full-featured ecommerce frontend application designed to showcase products, manage shopping carts, and provide an intuitive user interface for online shopping. The project demonstrates modern frontend patterns and a clear separation of concerns.
 
 ## 🛠 Tech Stack
 
@@ -29,6 +29,70 @@ This is a full-featured ecommerce frontend application designed to showcase prod
 - 🔔 Toast notifications for user feedback
 - 🎨 Icon library for enhanced UI
 - 📊 Interactive carousel/slider components
+
+## 🔐 Authentication (Login & Sign Up)
+
+This project includes Login and Sign Up pages so users can authenticate and create accounts. The repository provides the frontend UI and client-side form handling; you can connect it to a backend API to enable real authentication.
+
+What I added to the README:
+
+- Short overview of the authentication pages and how to access them in development.
+- Example environment variable and API endpoint patterns to integrate a backend.
+- Example request payloads for login and registration.
+
+How to use locally
+
+1. Start the development server:
+
+```bash
+npm run dev
+```
+
+2. Open the app in your browser and navigate to:
+
+- Login page: `http://localhost:5173/login`
+- Sign Up page: `http://localhost:5173/signup`
+
+(If your routes differ, check your router configuration in `src`.)
+
+Integrating a backend (example)
+
+- Add an environment variable for your API base URL. With Vite, add a `.env` file in the project root containing:
+
+```
+VITE_API_URL=https://your-api.example.com
+```
+
+- Typical endpoints the frontend expects (adjust to your backend):
+
+  - POST `${VITE_API_URL}/api/auth/login` — to log in a user
+  - POST `${VITE_API_URL}/api/auth/register` — to create a new user
+
+Example request payloads
+
+- Login (JSON):
+
+```json
+{
+  "email": "user@example.com",
+  "password": "supersecret"
+}
+```
+
+- Sign Up (JSON):
+
+```json
+{
+  "name": "John Doe",
+  "email": "user@example.com",
+  "password": "supersecret"
+}
+```
+
+Notes
+
+- If you don't have a backend yet, the forms can be used for UI testing; connect a mock or intercept requests in the frontend to simulate successful responses.
+- To customize behavior, search for the login/signup components in `src/pages` or `src/components` (naming may vary) and update the API calls or form handlers there.
 
 ## 📋 Prerequisites
 
