@@ -20,8 +20,8 @@ function HeroSlider() {
     <>
       <div className="hero">
         <div className="container">
-          <Swiper loop={true} slidesPerView={1}  
-          autoplay={{ delay: 2500, disableOnInteraction: false }} pagination={{ clickable: true }} modules={[Pagination, Autoplay, Navigation]} className="mySwiper">
+          <Swiper loop={true} slidesPerView={1}
+            autoplay={{ delay: 2500, disableOnInteraction: false }} pagination={{ clickable: true }} modules={[Pagination, Autoplay, Navigation]} className="mySwiper">
             <SwiperSlide>
               <div className="content">
                 <h4>introducing the new </h4>
@@ -29,7 +29,19 @@ function HeroSlider() {
                 <p>windows 7/10 compatible, ps3 controller</p>
                 <Link to="/shop" className="btn">Shop Now</Link>
               </div>
-              <img src="src/assets/banner_Hero1.jpg" alt="slider-hero1" />
+              <img
+                className='img1'
+                src="/assets/banner_Hero1.jpg"
+                alt="xbox-banner"
+              />            </SwiperSlide>
+            <SwiperSlide>
+              <div className="content">
+                <h4>introducing the new </h4>
+                <h3>microsoft xbox <br /> controller</h3>
+                <p>windows 7/10 compatible, ps3 controller</p>
+                <Link to="/shop" className="btn">Shop Now</Link>
+              </div>
+              <img src="/assets/banner_Hero2.jpg" alt="slider-hero2" />
             </SwiperSlide>
             <SwiperSlide>
               <div className="content">
@@ -38,16 +50,7 @@ function HeroSlider() {
                 <p>windows 7/10 compatible, ps3 controller</p>
                 <Link to="/shop" className="btn">Shop Now</Link>
               </div>
-              <img src="src/assets/banner_Hero2.jpg" alt="slider-hero2" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="content">
-                <h4>introducing the new </h4>
-                <h3>microsoft xbox <br /> controller</h3>
-                <p>windows 7/10 compatible, ps3 controller</p>
-                <Link to="/shop" className="btn">Shop Now</Link>
-              </div>
-              <img src="src/assets/banner_Hero3.jpg" alt="slider-hero3" />
+              <img src="/assets/banner_Hero3.jpg" alt="slider-hero3" />
             </SwiperSlide>
           </Swiper>
         </div>

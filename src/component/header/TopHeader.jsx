@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import "./header.css"
-import icon from "../../assets/icon.jpg";
+import icon from "/assets/icon.jpg";
 import { Link } from 'react-router-dom'
 import { IoMdHeart } from "react-icons/io";
 import { GrSearch } from "react-icons/gr";

@@ -226,3 +226,8 @@ border: 1px solid var(--main-color);
     font-weight: bold;
     color: var(--main-color);
 }
+.hero img.img1 {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
